@@ -6,6 +6,13 @@ var playerscore = 0;
 var enemyscore = 0;
 
 
+$("#askToPlay").hide();
+$("#askToPlay").click(function(){
+		window.location.reload();
+});
+
+
+
 function randomize () {
 	var x = Math.floor(Math.random()*(3)+1);
 	var y;
@@ -23,25 +30,26 @@ function randomize () {
 	return x;
 }
 
+$("#rockid").click(function(){
+		player = playerpick + 1;
+		play.battle();
+		updateScore();
+		checkwhowins();
+});
 
-function playerPickRock (){
-	player = playerpick + 1;
-	play.battle();
-	updateScore();
-	checkwhowins();
-	}
-function playerPickPaper (){
+$("#paperid").click(function(){
 	player = playerpick + 2;
 	play.battle();
 	updateScore();
 	checkwhowins();
-	}
-function playerPickScissor (){
+});
+
+$("#scissorid").click(function(){
 	player = playerpick + 3;
 	play.battle();
 	updateScore();
 	checkwhowins();
-	}
+});
 
 var play = {
 	playerscore: 0,
@@ -119,10 +127,18 @@ function updateScore() {
 
 function checkwhowins() {
 	if(playerscore === 5){
-		$("#battleresult")("CONGRATULATIONS!! YOU WIN!!");
+		$("#battleresult").html("CONGRATS!! YOU WIN!!");
+		$("#askToPlay").show();
+		$("#rockid").hide();
+		$("#paperid").hide();
+		$("#scissorid").hide();
 	}
 	else if(enemyscore === 5) {
 		$("#battleresult").html("Sorry, Better luck next time!");
+		$("#askToPlay").show();
+		$("#rockid").hide();
+		$("#paperid").hide();
+		$("#scissorid").hide();
 	}
 }
 

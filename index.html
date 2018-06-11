@@ -15,7 +15,7 @@
 		
 		<div class="row p-2 m-2">
 		
-			<div class = "col-4 miniContainer">
+			<div class = "col-6 col-lg-4 miniContainer mb-2">
 					<div class="row">
 						<div class= "col-6 text-center p-3">
 							<img id = "playerresult" style="height:150px" src = "">
@@ -27,12 +27,13 @@
 					</div>
 	
 			</div>
-			<div class="col-4">
+			<div class="col-6 col-lg-4 mb-2">
 				<div class="miniContainer text-center p-3">
 				<span id = "battleresult" class="medium text-center"></span>
+				<button id="askToPlay" class="btn">Want to Play Again?</button>
 				</div>
 			</div>
-			<div class = "col-4">
+			<div class = "col-12 col-lg-4">
 					<div class = "row miniContainer">
 						<h3 class="col-12 text-center pt-2">SCORE</h3>
 						
@@ -55,13 +56,19 @@
 		</div>
 
 		<div class="miniContainer1 p-2 m-2">
-
 			<div class= "row p-2">
-				<div class="col-4 text-center"><img src = "assets/img/rock.jpg"  id="rockid" class="weapon" onclick ="  playerPickRock()"></div>
-				<div class="col-4 text-center"><img src = "assets/img/paper.jpg"  id="paperid" class="weapon" onclick =" playerPickPaper()"></div>
-				<div class="col-4 text-center"><img src = "assets/img/scissors.jpg" class="weapon" id="scissor" onclick =" playerPickScissor()"></div>
+				<div class="col-sm-12 col-lg-4 text-center">
+					<img src = "assets/img/rock.jpg"  id="rockid" class="weapon">
+				</div>
+				<div class="col-sm-12 col-lg-4 text-center">
+					<img src = "assets/img/paper.jpg"  id="paperid" class="weapon">
+				</div>
+				<div class="col-sm-12 col-lg-4 text-center">
+					<img src = "assets/img/scissors.jpg" id="scissorid" class="weapon">
+				</div>
 			</div>
 		</div>
+
 	</div>
 
 
