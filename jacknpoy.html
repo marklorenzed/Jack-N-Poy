@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+
+</head>
+<body>
+	<div class="container-fluid p-2">	
+		<div class="col-12 text-uppercase" id="header"><h1>Let's Play Jack n Poy!</h1>
+		</div>
+		
+		<div class="row p-2 m-2">
+		
+			<div class = "col-4 miniContainer">
+					<div class="row">
+						<div class= "col-6 text-center p-3">
+							<img id = "playerresult" style="height:150px" src = "">
+						</div>
+						
+						<div class="col-6 text-center p-3">
+							<img id = "enemyresult" style="height:150px" src = "" >
+						</div>
+					</div>
+	
+			</div>
+			<div class="col-4">
+				<div class="miniContainer text-center p-3">
+				<span id = "battleresult" class="medium text-center"></span>
+				</div>
+			</div>
+			<div class = "col-4">
+					<div class = "row miniContainer">
+						<h3 class="col-12 text-center pt-2">SCORE</h3>
+						
+						<div class="col-6 text-center">
+							<h3>PLAYER</h3>
+							<br>
+							<p class= "small" id="playerscore">0</p>
+						</div>
+						<div class="col-6 text-center">
+							<h3>ENEMY</h3>
+							<br>
+							<p class= "small" id="enemyscore">0</p>
+						</div>
+						<div class="col-12">	
+							<button class="btn" onclick="resetScore()">Reset Score</button>
+						</div>
+					</div>
+				
+			</div>
+		</div>
+
+		<div class="miniContainer1 p-2 m-2">
+
+			<div class= "row p-2">
+				<div class="col-4 text-center"><img src = "assets/img/rock.jpg"  id="rockid" class="weapon" onclick ="  playerPickRock()"></div>
+				<div class="col-4 text-center"><img src = "assets/img/paper.jpg"  id="paperid" class="weapon" onclick =" playerPickPaper()"></div>
+				<div class="col-4 text-center"><img src = "assets/img/scissors.jpg" class="weapon" id="scissor" onclick =" playerPickScissor()"></div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <!-- external bootstrap js -->
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
