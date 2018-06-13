@@ -1,9 +1,12 @@
 *{
 	padding:0;
 	margin:0;
-
+	font-family: 'Oswald', sans-serif;
 }
 
+body {
+	background-color: #B5D99C;
+}
 #playerPick {
 	background-color: #F5F7DC;
 	min-height: 300px;
@@ -60,4 +63,12 @@ img {
 .weapon:hover {
 	height: 220px;
 	transition: 0.5s;
+}
+
+#playerscore {
+	font-size: 50px;
+}
+
+#enemyscore {
+	font-size: 50px;
 }
